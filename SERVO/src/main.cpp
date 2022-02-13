@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include <ESP32Servo.h>
+#include <Servo.h>
 
 const int SERVO = 13;
 const int TOUCH = 12;
@@ -9,8 +9,6 @@ int value = 0;
 int timePrint = 0;
 
 Servo myservo;
-ESP32PWM pwm;
-
 
 void printar(int val, int value, int valueRead){
   Serial.print("val: ");
